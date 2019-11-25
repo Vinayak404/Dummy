@@ -1,0 +1,39 @@
+[{
+        "Name": "Vinayak",
+        "ID": 1,
+        "specialization": "Dermatologist",
+        "shift": "AM",
+        "BusyUntill": 0
+    }, {
+        "Name": "Pradeep",
+        "ID": 2,
+        "specialization": "Dermatologist",
+        "shift": "PM",
+        "BusyUntill": 0
+    }, {
+        "Name": "Shubham",
+        "ID": 3,
+        "specialization": "Cardiologist",
+        "shift": "AM",
+        "BusyUntill": 0
+    }, {
+        "Name": "Dilip",
+        "ID": 4,
+        "specialization": "Cardiologist",
+        "shift": "PM",
+        "BusyUntill": 0
+    },
+    {
+        "Name": "Rakshak",
+        "ID": 5,
+        "specialization": "Urologist",
+        "shift": "PM",
+        "BusyUntill": 0
+    }, {
+        "Name": "Karthik",
+        "ID": 6,
+        "specialization": "Urologist",
+        "shift": "AM",
+        "BusyUntill": 0
+    }
+]
