@@ -1,39 +1,69 @@
 [{
-        "Name": "Vinayak",
-        "ID": 1,
-        "specialization": "Dermatologist",
-        "shift": "AM",
-        "BusyUntill": 0
-    }, {
-        "Name": "Pradeep",
-        "ID": 2,
-        "specialization": "Dermatologist",
-        "shift": "PM",
-        "BusyUntill": 0
-    }, {
-        "Name": "Shubham",
-        "ID": 3,
-        "specialization": "Cardiologist",
-        "shift": "AM",
-        "BusyUntill": 0
-    }, {
-        "Name": "Dilip",
-        "ID": 4,
-        "specialization": "Cardiologist",
-        "shift": "PM",
-        "BusyUntill": 0
-    },
-    {
-        "Name": "Rakshak",
-        "ID": 5,
-        "specialization": "Urologist",
-        "shift": "PM",
-        "BusyUntill": 0
-    }, {
-        "Name": "Karthik",
-        "ID": 6,
-        "specialization": "Urologist",
-        "shift": "AM",
-        "BusyUntill": 0
-    }
-]
+    "Name": "Pradeep",
+    "ID": 2,
+    "specialization": "Dermatologist",
+    "shift": "PM",
+    "patientVisit": [],
+    "nextFree": []
+}, {
+    "Name": "Dilip",
+    "ID": 4,
+    "specialization": "Cardiologist",
+    "shift": "PM",
+    "patientVisit": [],
+    "nextFree": []
+}, {
+    "Name": "Karthik",
+    "ID": 6,
+    "specialization": "Urologist",
+    "shift": "AM",
+    "patientVisit": [],
+    "nextFree": []
+}, {
+    "Name": "Vinayak",
+    "ID": 1,
+    "specialization": "Dermatologist",
+    "shift": "AM",
+    "patientVisit": [
+        [1, ["Tue", "Nov", "26", "2019"]]
+    ],
+    "nextFree": []
+}, {
+    "Name": "Shubham",
+    "ID": 3,
+    "specialization": "Cardiologist",
+    "shift": "AM",
+    "patientVisit": [
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [4, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]],
+        [3, ["Tue", "Nov", "26", "2019"]]
+    ],
+    "nextFree": []
+}, {
+    "Name": "Rakshak",
+    "ID": 5,
+    "specialization": "Urologist",
+    "shift": "PM",
+    "patientVisit": [
+        [5, ["Tue", "Nov", "26", "2019"]],
+        [6, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]],
+        [32, ["Tue", "Nov", "26", "2019"]]
+    ],
+    "nextFree": []
+}]
