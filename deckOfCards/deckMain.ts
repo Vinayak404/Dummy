@@ -1,3 +1,9 @@
+
+/**
+ * @desc takes no of players as input and distributed the cards among them equally
+ * @param deckOfCards class for the whole program
+ * @return the cards allotted
+ */
 import { deckOfCards } from "./deckOfCardsBL";
 
 export { }
