@@ -5,7 +5,6 @@
  * @return the cards allotted
  */
 import { deckOfCards } from "./deckOfCardsBL";
-
 export { }
 class game extends deckOfCards {
     constructor() {
@@ -36,6 +35,11 @@ class game extends deckOfCards {
         console.log(players);
     }
 }
-let play = new game;
+try {
+    let play = new game;
 
-play.distributeFor4(9);
+    play.distributeFor4(9);
+} catch (e) {
+    console.log(e);
+
+}
