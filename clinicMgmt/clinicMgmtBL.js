@@ -4,12 +4,12 @@ var input = require('readline-sync');
 var fs = require('fs');
 var docJson = fs.readFileSync('../clinicMgmt/doctors.json');
 var doctor = JSON.parse(docJson);
-function doctorFile() {
-    var docJson = fs.readFileSync('../clinicMgmt/doctors.json');
-    var doctor = JSON.parse(docJson);
-    return doctor;
-}
-doctorFile();
+// function doctorFile() {
+//     let docJson = fs.readFileSync('../clinicMgmt/doctors.json')
+//     var doctor = JSON.parse(docJson)
+//     return doctor
+// }
+// doctorFile()
 // let patJson = fs.readFileSync('../clinicMgmt/patients.json')
 // const patient = JSON.parse(patJson)
 // console.log(doctor);
@@ -78,7 +78,7 @@ var clinicMgmt = /** @class */ (function () {
                 console.log(patients.Name, 'with ID', patients.ID, 'has appointment with Dr.', availableDocs[i].Name, 'on', date, availableDocs[i].shift);
                 this.findDoctorByIDandEdit(docTid, patients.ID, doctor, date);
                 // this.patientCheckIn(patients)
-                fs.writeFileSync('../clinicMgmt/patients.json', JSON.stringify(patients));
+                // fs.writeFileSync('../clinicMgmt/patients.json', JSON.stringify(patients))
             }
             else {
                 var docTid = availableDocs[i].ID;
@@ -124,6 +124,9 @@ var clinicMgmt = /** @class */ (function () {
             case (3): {
                 patient.specialization = "Cardiologist";
             }
+            default: {
+                console.log("Please Enter valid input and try again");
+            }
         }
         patient.ID = Math.floor(Math.random() * 100);
         patient.Name = input.question("Enter the Patients Name:");
@@ -133,11 +136,4 @@ var clinicMgmt = /** @class */ (function () {
     return clinicMgmt;
 }());
 exports.clinicMgmt = clinicMgmt;
-var myClinic = new clinicMgmt(doctor);
-// myClinic.sortDocs()
-var patient1 = { "Name": "kumar", "ID": 35, "mobile": 78965412555, "specialization": "Dermatologist" };
-var patient2 = { "Name": "ajay", "ID": 36, "mobile": 9652112555, "specialization": "Neurologist" };
-// console.log(
-// myClinic.findDoctorBySpl('Dermatologist'))
-myClinic.patientEntry();
 // myClinic.sortDocs()

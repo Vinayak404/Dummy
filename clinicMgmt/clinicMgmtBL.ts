@@ -7,17 +7,17 @@
  * @return the appointment details
  */
 export { clinicMgmt }
-declare var require: any
+declare let require: any
 const input = require('readline-sync')
 const fs = require('fs')
 let docJson = fs.readFileSync('../clinicMgmt/doctors.json')
 var doctor = JSON.parse(docJson)
-function doctorFile() {
-    let docJson = fs.readFileSync('../clinicMgmt/doctors.json')
-    var doctor = JSON.parse(docJson)
-    return doctor
-}
-doctorFile()
+// function doctorFile() {
+//     let docJson = fs.readFileSync('../clinicMgmt/doctors.json')
+//     var doctor = JSON.parse(docJson)
+//     return doctor
+// }
+// doctorFile()
 
 // let patJson = fs.readFileSync('../clinicMgmt/patients.json')
 // const patient = JSON.parse(patJson)
@@ -98,7 +98,7 @@ class clinicMgmt {
                 console.log(patients.Name, 'with ID', patients.ID, 'has appointment with Dr.', availableDocs[i].Name, 'on', date, availableDocs[i].shift)
                 this.findDoctorByIDandEdit(docTid, patients.ID, doctor, date)
                 // this.patientCheckIn(patients)
-                fs.writeFileSync('../clinicMgmt/patients.json', JSON.stringify(patients))
+                // fs.writeFileSync('../clinicMgmt/patients.json', JSON.stringify(patients))
             } else {
 
                 let docTid = availableDocs[i].ID
@@ -138,6 +138,10 @@ class clinicMgmt {
             case (3): {
                 patient.specialization = "Cardiologist"
             }
+            default: {
+                console.log("Please Enter valid input and try again");
+
+            }
         }
         patient.ID = Math.floor(Math.random() * 100)
         patient.Name = input.question("Enter the Patients Name:")
@@ -145,14 +149,7 @@ class clinicMgmt {
         this.getAppointment(patient)
     }
 }
-let myClinic = new clinicMgmt(doctor)
 
-
-// myClinic.sortDocs()
-// console.log(
-// myClinic.findDoctorBySpl('Dermatologist'))
-
-myClinic.patientEntry()
 
 // myClinic.sortDocs()
 

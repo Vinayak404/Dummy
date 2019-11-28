@@ -6,3 +6,4 @@ abstract class deckOfCards {
     }
     abstract distributeFor4(cardsPerPerson)
 }
+           
